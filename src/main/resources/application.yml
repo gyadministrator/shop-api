@@ -1,0 +1,16 @@
+#生产环境
+server:
+  servlet:
+    path: /api/v1
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop-api??useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: gy123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
